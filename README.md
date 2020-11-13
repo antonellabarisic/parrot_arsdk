@@ -16,7 +16,7 @@ git clone https://github.com/antonellabarisic/parrot_arsdk.git
 cd parrot_arsdk
 git checkout noetic_dev
 sudo apt-get install libavahi-client-dev
-sudo ln -s /usr/bin/python3 /usr/bin/pyhton
+sudo ln -s /usr/bin/python3 /usr/bin/python
 cd <path_to_your_catkin_ws>
 catkin_make
 ```
@@ -29,10 +29,10 @@ git clone https://github.com/AutonomyLab/bebop_autonomy.git
 Modify /bebop_driver/src/bebop_video_decoder.cpp
 - line 93: CODEC_AP_TRUNCATED -> AV_CODEC_AP_TRUNCATED
 - line 95: CODEC_FLAG_TRUNCATED -> AV_CODEC_FLAG_TRUNCATED
-- line 97: CODEC_FLAG2_CHUNKS -> AV_CODECO_FLAG2_CHUNKS
+- line 97: CODEC_FLAG2_CHUNKS -> AV_CODEC_FLAG2_CHUNKS
 
 
-Add line in your ~/.bashrc for library path:
+Add this line in your ~/.bashrc :
 ```
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:<path_to_your_catkin_ws>/devel/lib/parrot_arsdk
 ```

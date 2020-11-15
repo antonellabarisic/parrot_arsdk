@@ -27,7 +27,7 @@ cd <path_to_your_catkin_ws>/src
 git clone https://github.com/AutonomyLab/bebop_autonomy.git
 ```
 Modify /bebop_driver/src/bebop_video_decoder.cpp
-- line 93: CODEC_AP_TRUNCATED -> AV_CODEC_AP_TRUNCATED
+- line 93: CODEC_AP_TRUNCATED -> AV_CODEC_CAP_TRUNCATED
 - line 95: CODEC_FLAG_TRUNCATED -> AV_CODEC_FLAG_TRUNCATED
 - line 97: CODEC_FLAG2_CHUNKS -> AV_CODEC_FLAG2_CHUNKS
 
